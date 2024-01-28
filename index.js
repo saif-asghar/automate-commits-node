@@ -1,11 +1,9 @@
-import fetch from 'node-fetch';
-
-
+import fetch, { Headers } from 'node-fetch';
 
 const today = new Date();
 
 // days back;
-const daysBack = 0;
+const daysBack = 4;
 today.setDate(today.getDate() - daysBack);
 
 const formattedToday = today.toISOString();
